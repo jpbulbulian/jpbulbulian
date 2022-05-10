@@ -3,6 +3,7 @@
 /*=================================*/
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -287,13 +288,6 @@ h4,
 /*=================================*/
 /*  Home Section
 /*=================================*/
-
-.home-bg {
-  background-image: url(../images/home-bg.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
 .navbar-default {
   background-color: transparent;
   border: none;
@@ -424,7 +418,6 @@ h4,
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 35px;
   overflow: hidden;
 }
 
@@ -450,12 +443,13 @@ h4,
 }
 
 .home .social {
-  position: relative;
-  z-index: 5;
+  margin: 42px;
 }
 
 .home .social li {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home .social a {
@@ -470,7 +464,7 @@ h4,
 
 .home .social li a img {
   filter: invert(0.9);
-  height: 22px;
+  height: 24px;
 }
 
 .scroll_down {
@@ -1084,32 +1078,29 @@ input.form-control:last-of-type {
 
 footer {
   background: #000;
+  padding-top: 70px;
+  padding-bottom: 20px;
 }
 
 footer h3 {
   text-transform: uppercase;
-  color: #fff;
+  color: white;
   font-weight: 700;
-  font-size: 30px;
-  margin-bottom: 30px;
 }
 
 footer p {
   color: #999;
-  font-size: 15px;
-  font-weight: 400;
-  margin-bottom: 0;
 }
 
 footer .social-links {
-  margin-bottom: 20px;
+  margin: 30px;
 }
 
 footer .social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 0 5px;
+  margin: 5px;
   width: 42px;
   height: 42px;
   border-radius: 50%;

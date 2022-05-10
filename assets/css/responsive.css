@@ -2,6 +2,16 @@
             Smart phone and tablets
 ===============================================*/
 
+@media (max-width: 500px) {
+  .sec_title h2 {
+    font-size: 35px;
+  }
+
+  .home .type span.typed-cursor {
+    font-size: inherit;
+  }
+}
+
 @media (max-width: 767px) {
   /*-- home --*/
   .navbar-default {
@@ -86,18 +96,21 @@
     float: none;
     margin-right: 0;
   }
-}
 
-@media (max-width: 500px) {
-  .sec_title h2 {
-    font-size: 35px;
-  }
-
-  .home .type span.typed-cursor {
-    font-size: inherit;
+  .home-bg {
+    background-image: url(../images/home-bg-mobile.jpg);
+    background-position: center;
+    background-size: cover;
   }
 }
 
+@media (min-width: 768px) {
+  .home-bg {
+    background-image: url(../images/home-bg-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
 /*===============================================
             Small screen
 ===============================================*/
